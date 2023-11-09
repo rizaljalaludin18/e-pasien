@@ -1,0 +1,328 @@
+body {
+    font-family: Poppins, Arial, sans-serif;
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 360px;
+    margin: 0 auto;
+}
+
+.header, .search, .menu, .medical-check, .poliklinik, .doctors, .articles, .footer {
+    padding: 20px;
+}
+
+.header {
+    width: 90%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 12px;
+    font-weight: 400;
+}
+
+.header .greeting {
+    text-align: left;
+}
+
+.header h3 {
+    margin-top: 0; /* Menghapus margin atas yang defaultnya ada pada elemen <h3> */
+}
+
+.header .notification {
+    width: 24px;
+    height: 24px;
+    margin-right: 5px;
+}
+
+
+.search input {
+    display: flex;
+width: 312px;
+padding: 12px 8px;
+align-items: center;
+gap: 4px;
+border-radius: 63px;
+border: 1px solid #FEFEFE;
+background: #F5F5F5;
+backdrop-filter: blur(1.5px);
+margin-bottom: 10px;
+}
+
+.menu {
+    width: 80%;
+    overflow: hidden;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    margin-top: 10px;
+    border-radius: 16px;
+    border: 1px solid #EEE;
+    background: #FFF;
+    /* shadow */
+    box-shadow: 0px 3.57376px 35.73759px 0px #E6E9EE;
+}
+
+.menu-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    color: var(--text-grey, #3A3A3A);
+font-size: 12px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+border-radius: 8px;
+border: 1px solid #F1F1F1;
+background: #FFF;
+}
+
+.menu-item svg {
+    width: 24px;
+    height: 24px;
+    margin-bottom: 5px; /* Menambahkan jarak antara ikon dan teks */
+}
+
+/* Pilihan lain: Sesuaikan ukuran ikon dan jarak sesuai kebutuhan */
+.jeda {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    width: 90%;
+    margin: auto;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+h3 {
+    margin: 0; /* Menghilangkan margin bawaan pada elemen <h3> */
+    color: #000;
+font-family: Poppins;
+font-size: 14px;
+font-style: normal;
+font-weight: 700;
+line-height: 171%; /* 23.94px */
+}
+
+.p {
+    margin: 0; /* Menghilangkan margin bawaan pada elemen <p> */
+    color: #F1410F;
+text-align: right;
+font-family: Poppins;
+font-size: 12px;
+font-style: normal;
+font-weight: 400;
+line-height: 171%; /* 20.52px */
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 90%;
+    margin: auto;
+    
+}
+
+.poli {
+    flex-basis: calc(50% - 10px);
+    display: flex;
+    align-items: center; /* Untuk mengatur elemen .poli di tengah vertikal */
+    padding: 12px 8px;
+    box-sizing: border-box;
+    margin-bottom: 12px;
+    height: 70px; /* Tinggi kartu yang tetap */
+    border-radius: 8px;
+background: #FFF;
+box-shadow: 0px 7.50438px 75.04379px 0px #E6E9EE;
+}
+
+svg {
+    width: 25px; /* Atur lebar SVG sesuai kebutuhan */
+    height: 250px; /* Atur tinggi SVG sesuai kebutuhan */
+    margin-right: 10px; /* Tambahkan margin kanan antara SVG dan teks */
+}
+
+.text-wrapper {
+    color: #505050;
+    font-family: Poppins;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 500;
+    margin-right: 10px;
+}
+
+
+
+
+
+/* Gaya tambahan sesuai kebutuhan Anda */
+
+
+/* Gaya tambahan sesuai kebutuhan Anda */
+
+
+ .doctors {
+    
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+    
+    
+    
+}
+.doctor .nama {
+    color: #505050;
+text-align: center;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: normal;
+}
+
+.doctor .skill {
+    color: #D41F13;
+text-align: center;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+}
+
+.doctor {
+    border-radius: 12px;
+    border: 1px solid #F4F4F4;
+    background: #FFF;
+    padding: 10px;
+    border-radius: 5px;
+    text-align: center;
+    box-shadow: 0px 3.60023px 36.00232px 0px #E6E9EE;
+    transition: transform 0.3s; /* Mengatur durasi dan jenis animasi */
+}
+
+.doctor img:hover {
+    transform: scale(1.1); /* Memperbesar gambar ketika dihover */
+}
+
+.articles {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-top: 20px;
+}
+
+.article {
+    border-radius: 12px;
+    border: 1px solid #F4F4F4;
+    background: url("https://s3-alpha-sig.figma.com/img/3589/9670/c77efce416a227a7cb077338ae5aa611?Expires=1700438400&Signature=TB89RtaLiKJGsW~7ffZZVzW-cSMvkjoJRVaRRkAkSm2BP0zYDNtpFbALaV7XUsscEH7L6d76N03wFPay~Ct4ASJOXj7bR9D5VX-a8TbtqQc~FJvdhqDqhqstw8knFKplLC1LqLp-uX2ff1c0axVXDmOp118Q9M0ZQYX2mmm3oaV7-sFxKf6I~WRTJ2eNjTZDeoJeeEp~xXNKXe0rdpHE7d-2kYPYAWO~zE8gjGWF2666cC2UJLdXWLXxUIbJISsQd9NRUa~cSJdvVoSbwLgEW5YKCQg7KQV1DUi~xfTkxiykvzoPv4WmpZwnMg4z1TTTyiW4-jyo0SwifaFi5uMMFA__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4") lightgray 50% / cover no-repeat;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 3.60023px 36.00232px 0px #E6E9EE;
+    height: 200px; /* Atur tinggi sesuai kebutuhan Anda */
+}
+
+.article2 {
+    border-radius: 12px;
+    border: 1px solid #F4F4F4;
+    background: url("https://s3-alpha-sig.figma.com/img/9619/b119/257982ea6ed83984ec4103f57faa2648?Expires=1700438400&Signature=QfcBBhIbVqCmZe8ITd2F4KIVDDsGg~WFHf4LeachMh2YbpHBCEf6Db38JpUwiqf-jAznXDY7dPiNkPpphVSj~vdR~DNyk3krgcGt~0nas09Fhmf6ZcDUKEqCpVXlYOroQtRhfF7E5D2Bd~3CxG3KYT4UAj18eB5Piti3hP1uxTC23MciFxTxxJ4hESjdDJ1~awa5zbanLyVLWZZon9O3IurXKbkEj705YhxXXNeUSdxyhmIC3Wvajt8MCKk6UEFOHmY07NCfBH3HSVWw67tzlRZ7dXVlu0md037DSRT1CzCmVf8ofnxdszQBOaB4HrdmlfstUk7FeEaQbxA75lUvSg__&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4") lightgray 50% / cover no-repeat;
+    padding: 10px;
+    text-align: center;
+    box-shadow: 0px 3.60023px 36.00232px 0px #E6E9EE;
+    height: 200px; /* Atur tinggi sesuai kebutuhan Anda */
+}
+
+.conten {
+    margin-top: 80%;
+}
+
+.conten a {
+    padding: 2px 12px;
+    border-radius: 24.471px;
+background: #FFF5F5;
+    color: #790707;
+text-align: center;
+font-size: 7.647px;
+text-decoration: none;
+font-weight: 400;
+line-height: 12.235px; /* 160% */
+}
+
+.conten a:hover {
+    background-color: #bbbec4;
+}
+.a1 {
+    color: #FFF;
+font-family: Poppins;
+font-size: 10px;
+font-style: normal;
+font-weight: 500;
+line-height: 14px; /* 140% */
+}
+
+
+.poliklinik-item img, .doctor img {
+    width: 70px;
+    height: auto;
+    border-radius: 5px;
+}
+
+.container-footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #F4F4F4;
+    padding: 20px;
+    
+}
+
+.menu-footer {
+    display: flex;
+    gap: 20px;
+}
+
+.menu-item-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    color: #484C52;
+    text-align: center;
+    cursor: pointer;
+    color: #484C52;
+font-family: Poppins;
+font-size: 10.992px;
+font-style: normal;
+font-weight: 400;
+line-height: 14.656px; /* 133.333% */
+    
+}
+
+.menu-item-footer svg {
+    width: 30px;
+    height: 30px;
+  
+}
+.menu-item-footer:nth-child(3) {
+    position: relative;
+}
+
+.menu-item-footer:nth-child(3)::before {
+    content: "";
+    position: absolute;
+    width: 40px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    height: 40px; /* Sesuaikan dengan ukuran yang Anda inginkan */
+    background-color: #D41F13; /* Warna latar belakang merah */
+    border-radius: 50%; /* Membuat latar belakang bulat */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
